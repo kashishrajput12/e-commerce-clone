@@ -136,52 +136,61 @@ header h1{
 }
 
 /* ************* item-product detail************ */
-.item-col{
-    text-align: center;
+.cart-item{
+    overflow-x: scroll;
 }
-.item-col .item-name{
-    margin-bottom: 40px;
-    border-bottom: 1px solid #9b9a9a;
+.cart-item table{
+width: 100%;
+border-collapse: collapse;
+table-layout: fixed;
+white-space: nowrap;
 }
-.item-col .item-name h6{
-text-transform: uppercase;
-font-size: 16px;
-font-weight: 600;
+
+.cart-item table td:nth-child(1){
+width: 100px;
+text-align: center;
 }
-.item-list ul{
-padding: 0;
+.cart-item table td:nth-child(2){
+width: 150px;
+text-align: center;
 }
-.item-list ul li{
-margin-bottom: 15px;
+.cart-item table td:nth-child(3){
+width: 250px;
+text-align: center;
 }
-.item-list ul li i{
-color: blue;
-cursor: pointer;
-padding-bottom: 30px;
+.cart-item table td:nth-child(4),
+.cart-item table td:nth-child(5),
+.cart-item table td:nth-child(6){
+width: 150px;
+text-align: center;
 }
-.item-list ul li img{
-width: 80px;
-height: 50px;
-object-fit: cover;
+.cart-item table td:nth-child(5) input{
+width: 70px;
+padding: 3px 5px 3px 15px;
 }
-.product{
-text-align: left;
-}
-.price ul li{
-padding-bottom: 30px;
-}
-.item-list ul li input{
-width: 40%;
-padding: 0 5px;
-}
-.item-list ul li input:focus{
+.cart-item table td:nth-child(5) input:focus{
 outline: none;
 }
-.input ul li{
-padding-bottom: 20px;
+.cart-item table thead {
+border: 1px solid #e2e9e1;
+border-left: none;
+border-right: none;
 }
-.total ul li{
-padding-bottom: 30px;
+.cart-item table thead td{
+font-weight: 600;
+text-transform: uppercase;
+font-size: 15px;
+padding: 10px 0;
+}
+.cart-item table tbody tr td{
+padding-top: 15px;  
+}
+.cart-item table tbody td{
+font-size: 15px;
+}
+.cart-item table img{
+width: 70px;
+object-fit: cover;
 }
 .cart-coupon{
 justify-content: space-between;
